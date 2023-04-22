@@ -1,0 +1,35 @@
+import random
+
+number = random.randint(0,2)
+if number== 0 :
+    computer="rock"
+if number== 1 :
+    computer="paper"
+if number== 2 :
+    computer = "scissors"
+
+player1=input("player1 Enter the move : ")
+print(f"player2 Enter the move :{computer}")
+player2=computer
+if player1=="rock":
+    if player2=="paper":
+        print("player2 win!...")
+elif player1=="rock":
+    if player2=="scissors":
+        print("player1 win!..")
+elif player1=="paper":
+     if player2=="scissors":
+         print("player2 win!..")
+elif player1 == "paper":
+    if player2 == "rock":
+        print("player2 win!..")
+elif player1 == "scissors":
+    if player2 == "rock":
+        print("player2 win!..")
+elif player1 == "scissors":
+    if player2 == "paper":
+        print("player1 win!..")
+elif player1 == player2:
+    print("tie!...")
+else:
+    print("Error!...")
